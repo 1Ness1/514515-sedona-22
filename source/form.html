@@ -53,76 +53,75 @@
     </section>
 
     <section class="feedback">
-      <form class="feedback__feedback-form" action="">
-      <div class="feedback__introduce introduce__introduce-form">
+      <form class="feedback__feedback-form" action="https://echo.htmlacademy.ru">
+      <div class="feedback-form introduce">
         <p class="feedback__title">Представьтесь:</p>
           <label class="feedback-form__text">
             Имя*:
-            <input class="introduce-form__input introduce-form__input--name" type="text" placeholder="Петр">
+            <input class="feedback-form__input introduce__input" type="text" placeholder="Петр">
           </label>
           <label class="feedback-form__text">
             Фамилия*:
-            <input class="introduce-form__input inroduce-form__input--surname" type="text" placeholder="Иванов">
+            <input class="feedback-form__input introduce__input" type="text" placeholder="Иванов">
           </label>
           <label class="feedback-form__text">
             Отчество:
-            <input class="introduce-form__input introduce-form__input--patronymic" type="text" placeholder="Александрович">
-        </label>
+            <input class="feedback-form__input introduce__input" type="text" placeholder="Александрович">
+          </label>
       </div>
 
-      <div class="feedback__contacts contacts__contacts-form">
+      <div class="feedback-form contacts">
         <p class="feedback__title">Контактная информация:</p>
           <label class="feedback-form__text">Контактный телефон*:
-            <input class="feedback-form__input contacts-form__input" type="tel" placeholder="Введите телефон">
+            <input class="feedback-form__input contacts__input" type="tel" placeholder="Введите телефон">
             <!-- Тут должна быть иконка телефона. -->
           </label>
           <label class="feedback-form__text">
             Электронная почта*:
-            <input class="feedback-form__input contacts-form__input" type="email" placeholder="Введите e-mail">
+            <input class="feedback-form__input contacts__input" type="email" placeholder="Введите e-mail">
             <!-- Тут должна быть иконка письма -->
           </label>
       </div>
 
-      <div class="feedback__impression impression__impression-form">
+      <div class="feedback-form impression">
         <p class="feedback__title">Ваше общее впечатление:</p>
-          <label class="feedback-form__text feedback-form__text--bold">
-            <input class="impression-form__radio" type="radio" name="impression" value="good" checked>
+          <label class="feedback-form__text feedback-form__text_bold">
+            <input class="impression__radio" type="radio" name="impression" value="good" checked>
             Скорее положительное
           </label>
-          <label class="feedback-form__text feedback-form__text--bold">
-            <input class="impression-form__radio"  type="radio" name="impression" value="badly">
+          <label class="feedback-form__text feedback-form__text_bold">
+            <input class="impression__radio"  type="radio" name="impression" value="badly">
             Скорее отрицательное
           </label>
-          <label class="feedback-form__text feedback-form__text--bold">
-            <input class="impression-form__radio" type="radio" name="impression" value="doubt">
+          <label class="feedback-form__text feedback__text_bold">
+            <input class="impression__radio" type="radio" name="impression" value="doubt">
             Затрудняюсь ответить
           </label>
       </div>
 
-      <div class="feedback__places places__places-form">
+      <div class="feedback-form place">
         <p class="feedback__title">Посещенные достопримечательности:</p>
-        <label class="feedback-form__text">
-          <form class="feedback__feedback-form places__places-form" action="">
-          <input class="places-form__checkbox" type="checkbox" checked name="place">
+        <label class="feedback-form__text feedback__text_bold">
+          <input class="places__checkbox" type="checkbox" checked name="place">
           Мост Дьявола
         </label>
-        <label class="feedback-form__text">
-          <input class="places-form__checkbox" type="checkbox" checked name="place">
+        <label class="feedback-form__text feedback__text_bold">
+          <input class="places__checkbox" type="checkbox" checked name="place">
           Гора-Колокол
         </label>
-        <label class="feedback-form__text">
-          <input class="places-form__checkbox" type="checkbox" checked name="place">
+        <label class="feedback-form__text feedback__text_bold">
+          <input class="places__checkbox" type="checkbox" checked name="place">
           Слайд-парк
         </label>
-        <label class="feedback-form__title">
-          <input class="places-form__checkbox" type="checkbox" name="place">
+        <label class="feedback-form__text feedback__text_bold">
+          <input class="places__checkbox" type="checkbox" name="place">
           Красные скалы
         </label>
       </div>
-      <div class="feedback__describe describe__describe-form">
+      <div class="feedback-form describe">
         <label>
           <p class="feedback__title">Опишите свои эмоции:</p>
-          <input class="feedback__textarea" type="textarea" placeholder="Опишите подробно все свои восторги" name="describe">
+          <input class="feedback__textarea feedback__text_bold" type="textarea" placeholder="Опишите подробно все свои восторги" name="describe">
         </label>
       </div>
       <button class="feedback__submit" type="submit">Отправить отзыв</button>

@@ -1,1 +1,28 @@
 //impression-form block
+
+.impression-form {
+  .impression-form__label {
+    position: relative;
+    margin-left: 40px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .impression-form__label::before {
+    content: "";
+    position: absolute;
+    border: 6px solid @lightgrey;
+    background: @lightgrey;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    top: 0;
+    left: -30px;
+  }
+
+  .form__radio:checked + .impression-form__label::before {
+    content: "";
+    background: @black;
+  }
+}

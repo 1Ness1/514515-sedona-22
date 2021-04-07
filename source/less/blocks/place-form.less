@@ -1,1 +1,26 @@
 //place-form block
+.place-form {
+  .place-form__label {
+    position: relative;
+    margin-left: 70px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .place-form__label::before {
+    content: "";
+    position: absolute;
+    background-color: @lightgrey;
+    width: 36px;
+    height: 36px;
+    top: 0;
+    left: -60px;
+  }
+
+  .form__checkbox:checked + .place-form__label::before {
+    content: "";
+    background: url("../img/tick.svg") no-repeat center center;
+    background-color: @lightgrey;
+  }
+}

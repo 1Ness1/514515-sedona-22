@@ -1,1 +1,35 @@
 //presentation block
+.presentation {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.presentation__wrapper {
+  max-width: 320px;
+}
+
+.presentation__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  font-family: inherit;
+}
+
+.presentation__description {
+  font-size: 14px;
+  line-height: 24px;
+  color: @lightblack;
+}
+
+.presentation__button {
+  background: transparent;
+  border: 0;
+  fill: @presentation-button;
+}
+
+.presentation__line {
+  height: 3px;
+  width: 100%;
+  max-width: 235px;
+  background: fade(@black, 20%);
+}

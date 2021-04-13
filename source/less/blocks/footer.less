@@ -2,7 +2,24 @@
 .footer__wrapper {
   max-width: 320px;
   width: 100%;
-  text-align: center;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .footer__wrapper {
+    max-width: @tablet-width;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .footer__wrapper {
+    max-width: @desctop-width;
+  }
 }
 
 .footer__hashtag {

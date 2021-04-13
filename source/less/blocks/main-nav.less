@@ -2,6 +2,7 @@
 .main-nav__wrapper {
   max-width: 320px;
   width: 100%;
+  margin: 0 auto;
 }
 
 @media (min-width: @tablet-width) {
@@ -16,7 +17,6 @@
   justify-content: space-between;
 }
 
-
 .main-nav__link {
   font-size: 14px;
   line-height: 26px;
@@ -28,6 +28,7 @@
 
 .main-nav__toggle {
   background: url("../img/icon-menu.svg") no-repeat;
+  background-position: center;
   border: 0;
   width: 23px;
   height: 22px;
@@ -36,5 +37,13 @@
 @media (min-width: @tablet-width) {
   .main-nav__list {
     flex-direction: row;
+  }
+
+  .main-nav__list li:nth-child(2) {
+    margin-right: auto;
+  }
+
+  .main-nav__item {
+    margin: 0 47/2px;
   }
 }

@@ -4,12 +4,25 @@
   background: url("../img/back-mobile.jpg") no-repeat;
   padding: 90px 0;
   position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .greeting-main__wrapper {
+    max-width: @tablet-width;
+  }
+
+  .greeting-main {
+    max-width: @tablet-width;
+  }
 }
 
 .greeting-main__wrapper {
   max-width: 320px;
   width: 100%;
   text-align: center;
+  margin: 0 auto;
 }
 
 .greeting-main__triangle {

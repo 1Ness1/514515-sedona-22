@@ -2,4 +2,26 @@
 .map-search__wrapper {
   max-width: 320px;
   width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .map-search__wrapper {
+    max-width: @tablet-width;
+  }
+
+  .map-search__image {
+    width: @tablet-width;
+    height: 350px;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .map-search__wrapper {
+    max-width: @desctop-width;
+  }
+
+  .map-search__image {
+    width: @desctop-width;
+  }
 }

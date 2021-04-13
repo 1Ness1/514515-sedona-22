@@ -1,7 +1,21 @@
 //main-nav block
 .main-nav__wrapper {
   max-width: 320px;
+  width: 100%;
 }
+
+@media (min-width: @tablet-width) {
+  .main-nav__wrapper {
+    max-width: @tablet-width;
+  }
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 
 .main-nav__link {
   font-size: 14px;
@@ -17,4 +31,10 @@
   border: 0;
   width: 23px;
   height: 22px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__list {
+    flex-direction: row;
+  }
 }

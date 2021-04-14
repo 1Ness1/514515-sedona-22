@@ -1,4 +1,58 @@
 //fedback block
 .feedback__wrapper {
   max-width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .feedback__wrapper {
+    max-width: 648px;
+    padding: 0 60px;
+  }
+
+  .feedback-form {
+    display: grid;
+    grid-template-areas: "impression introduce""contacts contacts""place place""describe describe";
+    align-items: flex-end;
+  }
+
+  .impression-form {
+    grid-area: impression;
+  }
+
+  .introduce-form {
+    grid-area: introduce;
+  }
+
+  .contacts-form {
+    grid-area: contacts;
+  }
+
+  .place-form {
+    grid-area: place;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 455px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .describe-form {
+    grid-area: describe;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .feedback__wrapper {
+    max-width: 960px;
+  }
+
+  .place-form {
+    max-width: 960px;
+  }
+
+  .form__title {
+    width: 100%;
+    text-align: center;
+  }
 }

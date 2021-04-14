@@ -1,6 +1,7 @@
 //greeting block
 .greeting {
   background: url("../img/back-mobile.jpg") no-repeat;
+  background-image: center;
   text-align: center;
 }
 
@@ -9,5 +10,12 @@
 }
 
 .greeting__wrapper {
-  max-width: 320px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .greeting__wrapper {
+    width: 648px;
+  }
 }

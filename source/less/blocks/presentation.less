@@ -6,6 +6,7 @@
 
 .presentation__wrapper {
   max-width: 320px;
+  margin: 0 auto;
 }
 
 .presentation__title {
@@ -32,4 +33,51 @@
   width: 100%;
   max-width: 235px;
   background: fade(@black, 20%);
+}
+
+
+@media (min-width: @tablet-width) {
+  .presentation__wrapper {
+    max-width: 648px;
+  }
+
+  .presentation__image {
+    width: 648px;
+    height: 500px;
+  }
+
+  .presentation__video {
+    position: relative;
+  }
+
+  .presentation__play {
+    background: fade(@black, 30%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 93px;
+    padding: 0 40px;
+  }
+
+  .presentation__button {
+    fill: @white;
+  }
+
+  .presentation__line {
+    width: 400px;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .presentation__wrapper {
+    max-width: 800px;
+  }
+
+  .presentation__image {
+    width: 800px;
+  }
 }

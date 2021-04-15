@@ -2,6 +2,7 @@
 .catalog-info__wrapper {
   max-width: 320px;
   text-align: center;
+  margin: 0 auto;
 }
 
 .catalog-info__title {
@@ -17,4 +18,10 @@
   line-height: 24px;
   text-transform: uppercase;
   font-family: inherit;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-info__wrapper {
+    max-width: 450px;
+  }
 }

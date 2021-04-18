@@ -8,6 +8,13 @@
   margin: 0 auto;
 }
 
+.greeting-main__triangle {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  fill: #ffffff;
+}
+
 @media (min-width: @tablet-width) {
   .greeting-main__wrapper {
     max-width: @tablet-width;
@@ -18,6 +25,10 @@
     background-size: cover;
     max-width: @tablet-width;
   }
+
+  .greeting-main__triangle {
+    bottom: 0;
+  }
 }
 
 .greeting-main__wrapper {
@@ -25,12 +36,6 @@
   width: 100%;
   text-align: center;
   margin: 0 auto;
-}
-
-.greeting-main__triangle {
-  position: absolute;
-  bottom: 5px;
-  fill: @white;
 }
 
 @media (min-width: @desctop-width) {

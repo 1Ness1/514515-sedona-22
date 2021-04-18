@@ -1,11 +1,18 @@
 //greeting-main block
 
 .greeting-main {
-  background: url("../img/back-mobile.jpg") no-repeat;
+  background: url("../img/back-mobile.jpg") no-repeat center;
   padding: 90px 0;
   position: relative;
   width: 100%;
   margin: 0 auto;
+}
+
+.greeting-main__triangle {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  fill: #ffffff;
 }
 
 @media (min-width: @tablet-width) {
@@ -14,7 +21,13 @@
   }
 
   .greeting-main {
+    background: url("../img/back-tablet.jpg") 50% -20px no-repeat;
+    background-size: cover;
     max-width: @tablet-width;
+  }
+
+  .greeting-main__triangle {
+    bottom: 0;
   }
 }
 
@@ -25,8 +38,13 @@
   margin: 0 auto;
 }
 
-.greeting-main__triangle {
-  position: absolute;
-  bottom: 5px;
-  fill: @white;
+@media (min-width: @desctop-width) {
+  .greeting-main {
+    background: url("../img/back-desktop.jpg") 50% -20px no-repeat;
+    max-width: @desctop-width;
+  }
+
+  .greeting-main__wrapper {
+    max-width: @desctop-width;
+  }
 }

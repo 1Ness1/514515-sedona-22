@@ -1,8 +1,12 @@
 //greeting block
 .greeting {
-  background: url("../img/back-mobile.jpg") no-repeat;
-  background-image: center;
+  background: url("../img/back-mobile.jpg") no-repeat top;
+  background-size: cover;
   text-align: center;
+  padding: 90px 0;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
 }
 
 .greeting__text {
@@ -14,8 +18,32 @@
   margin: 0 auto;
 }
 
+.greeting__triangle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  fill: #ffffff;
+}
+
 @media (min-width: @tablet-width) {
   .greeting__wrapper {
-    width: 648px;
+    max-width: @tablet-width;
+  }
+
+  .greeting {
+    background: url("../img/back-tablet.jpg") center bottom no-repeat;
+    max-width: @tablet-width;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .greeting {
+    background: url("../img/back-desktop.jpg") center bottom no-repeat;
+    max-width: @desctop-width;
+  }
+
+  .greeting__wrapper {
+    max-width: @desctop-width;
   }
 }

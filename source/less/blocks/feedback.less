@@ -7,13 +7,14 @@
 @media (min-width: @tablet-width) {
   .feedback__wrapper {
     max-width: 648px;
-    padding: 0 60px;
   }
 
   .feedback-form {
     display: grid;
     grid-template-areas: "impression introduce""contacts contacts""place place""describe describe";
-    align-items: flex-end;
+    align-items: baseline;
+    grid-column-gap: 60px;
+    grid-row-gap: 50px;
   }
 
   .impression-form {
@@ -26,15 +27,6 @@
 
   .contacts-form {
     grid-area: contacts;
-  }
-
-  .place-form {
-    grid-area: place;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 455px;
-    justify-content: center;
-    align-items: center;
   }
 
   .describe-form {

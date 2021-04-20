@@ -19,7 +19,8 @@
 
 .form__text--column {
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
 }
 
 .form__input {
@@ -29,7 +30,6 @@
   background: @lightgrey;
   padding: 18px 0 14px 20px;
   width: 100%;
-  margin-left: 20px;
 }
 
 .form__input::placeholder {
@@ -70,6 +70,7 @@
 
   .form__text {
     margin-bottom: 29px;
+    align-items: flex-start;
 
     &:last-of-type {
       margin-bottom: 0;
@@ -82,5 +83,11 @@
 
   .form__input {
     margin-left: 0;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .form__text--column {
+    flex-direction: row;
   }
 }

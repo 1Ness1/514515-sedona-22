@@ -1,4 +1,8 @@
 //contact-form block
+.contact-form__span-desktop {
+  display: none;
+}
+
 @media (max-width: @mobile-width-only) {
   .contacts-form {
     .form__text {
@@ -39,5 +43,35 @@
   .contacts-form__span {
     margin-left: 20px;
     margin-bottom: 8px;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .contacts-form {
+    .form__title {
+      width: 100%;
+    }
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .form__text {
+      margin-bottom: 0;
+      justify-content: space-around;
+      flex-grow: 1;
+    }
+  }
+
+  .contacts-form__svg {
+    top: 0;
+  }
+
+  .span--hidden {
+    display: none;
+  }
+
+  .contact-form__span-desktop {
+    display: block;
   }
 }

@@ -70,6 +70,8 @@
     max-width: @desctop-width;
     grid-template-areas: "road road road""plant north bridge";
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px 267px;
+    grid-auto-flow: row;
   }
 
   .card {
@@ -83,6 +85,7 @@
 
   .card__image--big {
     width: @desctop-width;
+    height: 400px;
   }
 
   .card__text {

@@ -22,3 +22,39 @@
   background: url("../img/tick.svg") no-repeat center center;
   background-color: @lightgrey;
 }
+
+
+@media (min-width: @tablet-width) {
+  .place-form {
+    grid-area: place;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 455px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    .form__text {
+      margin: 0;
+    }
+  }
+
+  .place-form__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 120px;
+    grid-row-gap: 60px;
+    text-align: center;
+    grid-auto-flow: row;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .place-form {
+    max-width: 100%;
+  }
+
+  .place-form__grid {
+    grid-template-columns: auto auto auto auto;
+  }
+}

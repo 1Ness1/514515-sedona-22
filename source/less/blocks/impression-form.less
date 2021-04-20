@@ -1,10 +1,10 @@
 //impression-form block
 .impression-form__label {
   position: relative;
-  margin-left: 40px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  text-transform: none;
 }
 
 .impression-form__label::before {
@@ -22,4 +22,16 @@
 .form__radio:checked + .impression-form__label::before {
   content: "";
   background: @black;
+}
+
+
+@media (min-width: @tablet-width) {
+  .impression-form__label {
+    margin-bottom: 50px;
+    margin-left: 30px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
 }

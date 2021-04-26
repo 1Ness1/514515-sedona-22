@@ -1,9 +1,7 @@
 //greeting block
 .greeting {
-  background: url("../img/back-mobile.jpg") no-repeat top;
-  background-size: cover;
+  background: url("../img/back-mobile.jpg") no-repeat 50% 100%;
   text-align: center;
-  padding: 90px 0;
   width: 100%;
   margin: 0 auto;
   position: relative;
@@ -16,6 +14,7 @@
 .greeting__wrapper {
   width: 320px;
   margin: 0 auto;
+  padding: 55px 0;
 }
 
 .greeting__triangle {
@@ -29,6 +28,13 @@
 @media (min-width: @tablet-width) {
   .greeting__wrapper {
     max-width: @tablet-width;
+    width: 100%;
+    padding: 95px 0 112px 0;
+  }
+
+  .greeting__text {
+    width: 457px;
+    height: 78px;
   }
 
   .greeting {
@@ -45,5 +51,7 @@
 
   .greeting__wrapper {
     max-width: @desctop-width;
+    width: 100%;
+    padding: 100px 0 115px 0;
   }
 }

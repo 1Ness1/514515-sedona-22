@@ -1,13 +1,45 @@
 //introduce-form block
 
+.introduce-form {
+  padding: 0 20px 0;
+
+  .form__title {
+    margin-bottom: 23px;
+  }
+
+  .form__text {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 18px;
+    grid-auto-flow: row;
+    align-items: center;
+    margin-bottom: 31px;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .introduce-form {
+    padding: 0;
+    margin-left: 40px;
+
     .form__title {
-      margin-bottom: 62px;
+      margin-bottom: 55px;
+      font-size: 21px;
     }
 
     .form__input {
-      margin-left: 20px;
+      padding: 23px 0 21px 22px;
     }
+
+    .form__text {
+      grid-gap: 15px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .introduce-form {
+    margin-left: 50px;
   }
 }

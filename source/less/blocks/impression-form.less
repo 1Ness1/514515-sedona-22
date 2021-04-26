@@ -1,22 +1,30 @@
 //impression-form block
+.impression-form {
+  padding: 20px 20px 0 20px;
+  display: grid;
+  grid-gap: 20px;
+}
+
 .impression-form__label {
   position: relative;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-transform: none;
+  margin-bottom: 22px;
+  margin-left: 78px;
 }
 
 .impression-form__label::before {
   content: "";
   position: absolute;
-  border: 6px solid @lightgrey;
+  border: 16px solid @lightgrey;
   background: @lightgrey;
-  width: 24px;
-  height: 24px;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
-  top: 0;
-  left: -30px;
+  top: -16px;
+  left: -76px;
 }
 
 .form__radio:checked + .impression-form__label::before {
@@ -26,12 +34,21 @@
 
 
 @media (min-width: @tablet-width) {
-  .impression-form__label {
-    margin-bottom: 50px;
-    margin-left: 30px;
+  .impression-form {
+    padding: 20px 0;
+    grid-gap: 30px;
 
-    &:last-of-type {
-      margin-bottom: 0;
+    .form__title {
+      font-size: 21px;
+      margin-bottom: 45px;
+    }
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .impression-form {
+    .form__title {
+      margin-left: 80px;
     }
   }
 }

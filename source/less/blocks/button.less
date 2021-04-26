@@ -4,10 +4,33 @@
   font-size: 21px;
   line-height: 26px;
   display: block;
-  padding: 15px 0 18px 0;
+  padding: 18px 0;
+  min-width: 280px;
+  margin: 0 auto;
+  text-transform: uppercase;
   text-align: center;
   background: @lightblue;
   text-decoration: none;
   border: 0;
-  margin-bottom: 65px;
+  margin-bottom: 47px;
+  font-weight: 700;
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
+@media (min-width: @tablet-width) {
+  .button {
+    min-width: 324px;
+    font-size: 21px;
+    line-height: 26px;
+    padding: 19px 12px 14px 0;
+    margin-bottom: 67px;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .button {
+    margin: 0;
+    margin-bottom: 74px;
+    padding-right: 0;
+  }
 }

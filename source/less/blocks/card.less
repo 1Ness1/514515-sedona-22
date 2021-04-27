@@ -5,6 +5,17 @@
   line-height: 24px;
 }
 
+.card__image {
+  display: block;
+  margin-bottom: 7px;
+}
+
+.card__text {
+  .page-main__line {
+    margin-bottom: 24px;
+  }
+}
+
 .card__link {
   text-align: left;
   font-weight: 700;
@@ -13,13 +24,19 @@
 .card__description {
   color: @lightblack;
   grid-area: desc;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: none;
   margin: 0;
+  margin-bottom: 10px;
 }
 
 .card__title {
   grid-area: title;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .card__like {
@@ -28,17 +45,74 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
+  min-height: 27px;
   color: @black;
+  fill: fade(@black, 30%);
   text-decoration: none;
+  margin-bottom: 15px;
+}
+
+.card__like-count {
+  margin: 0;
 }
 
 .card__svg {
-  fill: @white;
+  margin-right: 14px;
+  align-self: flex-start;
 }
 
+@media (min-width: @tablet-width) {
+  .card__text {
+    padding: 15px 20px;
+  }
+
+  .card__text--plant {
+    padding: 16px 28px 16px 20px;
+  }
+
+  .card__text--north {
+    padding: 15px 37px 15px 20px;
+  }
+
+  .card__text--bridge {
+    padding: 16px 30px 16px 20px;
+  }
+
+  .card__image {
+    margin: 0;
+  }
+
+  .card__title {
+    margin: 0;
+  }
+
+  .card__svg {
+    margin-right: 10px;
+  }
+
+  .card__like {
+    margin: 0;
+  }
+
+  .card__description {
+    margin: 0;
+  }
+}
 
 @media (min-width: @desctop-width) {
   .card__text {
-    padding: 20px 30px 20px 20px;
+    padding: 15px 20px;
+  }
+
+  .card__text--plant {
+    padding-right: 28px;
+  }
+
+  .card__text--north {
+    padding-right: 38px;
+  }
+
+  .card__text--bridge {
+    padding-right: 28px;
   }
 }

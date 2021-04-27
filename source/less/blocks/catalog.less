@@ -7,12 +7,18 @@
 .catalog__wrapper {
   max-width: 320px;
   margin: 0 auto;
+  padding: 0 20px;
+}
+
+.catalog__link {
+  display: block;
 }
 
 @media (min-width: @tablet-width) {
   .catalog__wrapper {
-    max-width: 648px;
+    max-width: 690px;
     display: grid;
+    grid-auto-flow: row;
     grid-template-areas: "road road""plant north""bridge ...";
     grid-template-columns: 1fr 1fr;
   }
@@ -72,6 +78,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 400px 267px;
     grid-auto-flow: row;
+    padding: 0;
   }
 
   .card {

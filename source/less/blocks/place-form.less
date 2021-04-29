@@ -1,35 +1,6 @@
 //place-form block
 .place-form {
   padding: 15px 0;
-
-  .form__title {
-    margin-bottom: 35px;
-  }
-}
-
-.place-form__label {
-  position: relative;
-  margin-left: 70px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: none;
-}
-
-.place-form__label::before {
-  content: "";
-  position: absolute;
-  background-color: @lightgrey;
-  width: 36px;
-  height: 36px;
-  top: -7px;
-  left: -70px;
-}
-
-.form__checkbox:checked + .place-form__label::before {
-  content: "";
-  background: url("../img/tick.svg") no-repeat center center;
-  background-color: @lightgrey;
 }
 
 .place-form__grid {
@@ -48,17 +19,6 @@
     max-width: @tablet-width - 320px;
     margin: 0 auto;
     padding: 0;
-
-    .form__title {
-      max-width: 308px;
-      text-align: center;
-      font-size: 21px;
-      margin-bottom: 60px;
-    }
-
-    .form__text {
-      margin: 0;
-    }
   }
 
   .place-form__grid {
@@ -71,27 +31,12 @@
     text-align: left;
     grid-auto-flow: row;
   }
-
-  .place-form__label::before {
-    width: 56px;
-    height: 56px;
-    top: -17px;
-    left: -78px;
-  }
 }
 
 @media (min-width: @desctop-width) {
   .place-form {
+    max-width: 960px;
     min-width: 100%;
-
-    .form__title {
-      margin: 0 auto;
-      margin-bottom: 60px;
-    }
-
-    .form__text {
-      min-width: 125px;
-    }
   }
 
   .place-form__grid {

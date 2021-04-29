@@ -71,35 +71,35 @@
       <div class="feedback__wrapper">
       <form class="feedback-form" action="https://echo.htmlacademy.ru">
       <div class="form introduce-form">
-        <p class="form__title">Представьтесь:</p>
-          <label class="form__text">
+        <p class="form__title form__title--introduce">Представьтесь:</p>
+          <label class="form__text form__text--introduce">
             Имя*:
-            <input class="form__input" type="text" placeholder="Петр">
+            <input class="form__input form__input--introduce" type="text" placeholder="Петр">
 
           </label>
-          <label class="form__text">
+          <label class="form__text form__text--introduce">
             Фамилия*:
-            <input class="form__input" type="text" placeholder="Иванов">
+            <input class="form__input form__input--introduce" type="text" placeholder="Иванов">
           </label>
-          <label class="form__text">
+          <label class="form__text form__text--introduce">
             Отчество:
-            <input class="form__input" type="text" placeholder="Александрович">
+            <input class="form__input form__input--introduce" type="text" placeholder="Александрович">
           </label>
           <div class="page-main__line"></div>
       </div>
 
       <div class="form contacts-form">
-        <p class="form__title">Контактная информация:</p>
+        <p class="form__title form__title--contacts-form">Контактная информация:</p>
           <div class="contacts-form__wrapper">
-          <label class="form__text form__text--column"><span class="contact-form__span-desktop">Телефон*</span><span class="contacts-form__span span--hidden">Контактный телефон*:</span>
-            <input class="form__input" type="tel" placeholder="Введите телефон">
+          <label class="form__text form__text--column form__text--contacts-form"><span class="contacts-form__span-desktop">Телефон*</span><span class="contacts-form__span contacts-form__span--hidden">Контактный телефон*:</span>
+            <input class="form__input form__input--contacts-form" type="tel" placeholder="Введите телефон">
             <svg class="contacts-form__svg" width="18" height="18" viewBox="0 0 18 18"  xmlns="http://www.w3.org/2000/svg">
               <path d="M3.6 7.8C5 10.6 7.4 12.9 10.2 14.4L12.4 12.2C12.7 11.9 13.1 11.8 13.4 12C14.5 12.4 15.7 12.6 17 12.6C17.6 12.6 18 13 18 13.6V17C18 17.6 17.6 18 17 18C7.6 18 0 10.4 0 1C0 0.4 0.4 0 1 0H4.5C5.1 0 5.5 0.4 5.5 1C5.5 2.2 5.7 3.4 6.1 4.6C6.2 4.9 6.1 5.3 5.9 5.6L3.6 7.8Z"/>
               </svg>
           </label>
-          <label class="form__text form__text--column">
+          <label class="form__text form__text--column form__text--contacts-form">
             <span class="contacts-form__span">Электронная почта*:</span>
-            <input class="form__input" type="email" placeholder="Введите e-mail">
+            <input class="form__input form__input--contacts-form" type="email" placeholder="Введите e-mail">
             <svg class="contacts-form__svg" width="16" height="12" viewBox="0 0 16 12" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 8C7.7 8 7.5 7.9 7 7.7L0 4V11C0 11.5 0.5 12 1 12H15C15.5 12 16 11.5 16 11V4L9 7.7C8.5 7.9 8.3 8 8 8ZM15 0H1C0.5 0 0 0.5 0 1V1.8L8 6L16 1.8V1C16 0.5 15.5 0 15 0Z"/>
               </svg>
@@ -109,17 +109,17 @@
       <div class="page-main__line"></div>
 
       <div class="form impression-form">
-        <p class="form__title">Ваше общее впечатление:</p>
+        <p class="form__title form__title--impression">Ваше общее впечатление:</p>
           <input class="form__radio visually-hidden" type="radio" name="impression" value="good" id="impression-good" checked>
-          <label class="form__text form__text--bold impression-form__label" for="impression-good">
+          <label class="form__text form__text--bold form__text--impression-form" for="impression-good">
             Скорее положительное
           </label>
           <input class="form__radio visually-hidden"  type="radio" name="impression" value="badly" id="impression-badly">
-          <label class="form__text form__text--bold impression-form__label" for="impression-badly">
+          <label class="form__text form__text--bold form__text--impression-form" for="impression-badly">
             Скорее отрицательное
           </label>
           <input class="form__radio visually-hidden" type="radio" name="impression" value="doubt" id="impression-doubt">
-          <label class="form__text form__text--bold impression-form__label" for="impression-doubt">
+          <label class="form__text form__text--bold  form__text--impression-form" for="impression-doubt">
             Затрудняюсь ответить
           </label>
 
@@ -127,22 +127,22 @@
       </div>
 
       <div class="form place-form">
-        <p class="form__title">Посещенные достопримечательности:</p>
+        <p class="form__title form__title--place-form">Посещенные достопримечательности:</p>
         <div class="place-form__grid">
         <input class="form__checkbox visually-hidden" type="checkbox" checked name="place" id="bridge">
-        <label class="form__text form__text--bold place-form__label" for="bridge">
+        <label class="form__text form__text--bold form__text--place-label" for="bridge">
           Мост Дьявола
         </label>
         <input class="form__checkbox visually-hidden" type="checkbox" checked name="place" id="mountain">
-        <label class="form__text form__text--bold place-form__label" for="mountain">
+        <label class="form__text form__text--bold form__text--place-label" for="mountain">
           Гора-Колокол
         </label>
         <input class="form__checkbox visually-hidden" type="checkbox" checked name="place" id="park">
-        <label class="form__text form__text--bold place-form__label" for="park">
+        <label class="form__text form__text--bold form__text--place-label" for="park">
           Слайд-парк
         </label>
         <input class="form__checkbox visually-hidden" type="checkbox" name="place" id="rock">
-        <label class="form__text form__text--bold place-form__label" for="rock">
+        <label class="form__text form__text--bold form__text--place-label" for="rock">
           Красные скалы
         </label>
       </div>
@@ -150,11 +150,12 @@
       </div>
       <div class="form describe-form">
         <label class="form__describe-label">
-          <p class="form__title">Опишите свои эмоции:</p>
+          <p class="form__title form__title--describe-form">Опишите свои эмоции:</p>
           <textarea class="form__textarea" name="" id="" cols="20" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
         </label>
       </div>
       <button class="feedback__button button" type="submit">Отправить отзыв</button>
+      <p class="describe__text">&ast; &mdash; Обязательные поля</p>
     </form>
   </div>
     </section>

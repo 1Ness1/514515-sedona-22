@@ -1,7 +1,6 @@
 //catalog block
 .catalog {
   text-align: left;
-  // чуть позже заменю
 }
 
 .catalog__wrapper {
@@ -22,53 +21,6 @@
     grid-template-areas: "road road""plant north""bridge ...";
     grid-template-columns: 1fr 1fr;
   }
-
-  .card--road {
-    grid-area: road;
-  }
-
-  .card--plant {
-    grid-area: plant;
-  }
-
-  .card--north {
-    grid-area: north;
-  }
-
-  .card--bridge {
-    grid-area: bridge;
-  }
-
-  .card__image {
-    width: 324px;
-    height: 267px;
-    grid-area: image;
-  }
-
-  .card__image--big {
-    width: 658px;
-    height: 400px;
-  }
-
-  .card__text {
-    display: grid;
-    grid-template-areas: "title like""desc like";
-    align-items: center;
-    background: @lightgrey;
-  }
-
-  .card__title {
-    grid-area: title;
-  }
-
-  .card__description {
-    grid-area: desc;
-  }
-
-  .card__like {
-    grid-area: like;
-    justify-self: flex-end;
-  }
 }
 
 @media (min-width: @desctop-width) {
@@ -79,37 +31,5 @@
     grid-template-rows: 400px 267px;
     grid-auto-flow: row;
     padding: 0;
-  }
-
-  .card {
-    position: relative;
-  }
-
-  .card__image {
-    width: 400px;
-    height: 267px;
-  }
-
-  .card__image--big {
-    width: @desctop-width;
-    height: 400px;
-  }
-
-  .card__text {
-    background: fade(@black, 30%);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    color: @white;
-  }
-
-  .card__description {
-    color: inherit;
-  }
-
-  .card__like {
-    color: inherit;
-    fill: @white;
   }
 }

@@ -1,8 +1,22 @@
 //map-search block
+
 .map-search__wrapper {
+  position: relative;
   max-width: 320px;
   width: 100%;
   margin: 0 auto;
+}
+
+.map-search__wrapper::before {
+  content: "";
+  position: absolute;
+  top: 46%;
+  left: 46%;
+  width: 27px;
+  height: 27px;
+  background: @lightblue;
+  border: 5px solid @white;
+  border-radius: 50%;
 }
 
 @media (min-width: @tablet-width) {
@@ -14,6 +28,11 @@
   .map-search__wrapper {
     max-width: @tablet-width;
   }
+
+  .map-search__wrapper::before {
+    top: 47%;
+    left: 48%;
+  }
 }
 
 @media (min-width: @desctop-width) {
@@ -23,5 +42,10 @@
 
   .map-search__wrapper {
     max-width: @desctop-width;
+  }
+
+  .map-search__wrapper::before {
+    top: 45%;
+    left: 49%;
   }
 }

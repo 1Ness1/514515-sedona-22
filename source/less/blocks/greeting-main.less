@@ -6,6 +6,11 @@
   position: relative;
   width: 100%;
   margin: 0 auto;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/back-mobile@2x.jpg") no-repeat 50% 40%;
+    background-size: cover;
+  }
 }
 
 .greeting-main__triangle {
@@ -34,6 +39,11 @@
     background-size: cover;
     max-width: @tablet-width;
     padding: 74px 0 85px 0;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/back-tablet@2x.jpg") 50% 0 no-repeat;
+      background-size: cover;
+    }
   }
 
   .greeting-main__triangle {
@@ -51,6 +61,11 @@
     background: url("../img/back-desktop.jpg") 50% 0 no-repeat;
     max-width: @desctop-width;
     padding: 74px 0 85px 0;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/back-desktop@2x.jpg") 50% 0 no-repeat;
+      background-size: cover;
+    }
   }
 
   .greeting-main__logo {

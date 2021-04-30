@@ -5,50 +5,22 @@
   grid-gap: 20px;
 }
 
-.impression-form__label {
-  position: relative;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: none;
-  margin-bottom: 22px;
-  margin-left: 78px;
-}
-
-.impression-form__label::before {
-  content: "";
-  position: absolute;
-  border: 16px solid @lightgrey;
-  background: @lightgrey;
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  top: -16px;
-  left: -76px;
-}
-
-.form__radio:checked + .impression-form__label::before {
-  content: "";
-  background: @black;
-}
-
 
 @media (min-width: @tablet-width) {
   .impression-form {
+    grid-area: impression;
     padding: 20px 0;
     grid-gap: 30px;
-
-    .form__title {
-      font-size: 21px;
-      margin-bottom: 45px;
-    }
+    position: relative;
   }
-}
 
-@media (min-width: @desctop-width) {
-  .impression-form {
-    .form__title {
-      margin-left: 80px;
-    }
+  .impression-form::after {
+    content: "";
+    position: absolute;
+    background: @form-line;
+    height: 100%;
+    width: 1px;
+    top: 0;
+    right: 0;
   }
 }

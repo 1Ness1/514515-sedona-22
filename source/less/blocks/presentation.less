@@ -75,6 +75,18 @@
   justify-content: space-between;
 }
 
+.presentation__play::before {
+  content: "";
+  position: absolute;
+  bottom: 82px;
+  left: 77px;
+  width: 10px;
+  height: 10px;
+  background: @white;
+  border-radius: 50%;
+  z-index: 20;
+}
+
 .presentation__image {
   display: block;
 }
@@ -120,6 +132,11 @@
     padding: 0 36px 0 30px;
   }
 
+  .presentation__play::before {
+    bottom: 39px;
+    left: 205px;
+  }
+
   .presentation__svg {
     fill: @white;
   }
@@ -137,7 +154,7 @@
 @media (min-width: @desctop-width) {
   .presentation__wrapper {
     max-width: 800px;
-    padding: 65px 0 95px 0;
+    padding: 65px 0 90px 0;
   }
 
   .presentation__description {

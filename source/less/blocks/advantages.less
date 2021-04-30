@@ -6,6 +6,10 @@
   text-align: center;
 }
 
+.advantages__image {
+  display: block;
+}
+
 .advantages__text--br {
   display: none;
 }
@@ -56,6 +60,34 @@
   width: 280px;
 }
 
+.advantages__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.advantages__number::before,
+.advantages__number::after {
+  content: "";
+  background: @white;
+  display: block;
+  width: 8px;
+  height: 2px;
+}
+
+.advantages__number::before {
+  margin-right: 5px;
+}
+
+.advantages__number::after {
+  margin-left: 5px;
+}
+
+.advantages__number--grey::before,
+.advantages__number--grey::after {
+  background: @lightblack;
+}
+
 @media (min-width: @tablet-width) {
   .advantages__wrapper {
     max-width: 768px;
@@ -95,8 +127,9 @@
 
   .advantages__item--blue {
     display: flex;
+    align-items: stretch;
     width: 768px;
-    align-items: center;
+    max-height: 256px;
   }
 
   .advantages__content-wrapper--blue {
@@ -108,7 +141,7 @@
   .advantages__title--blue {
     max-width: 150px;
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
   }
 
   .advantages__number--blue {
@@ -241,7 +274,7 @@
   .advantages__content-wrapper--white {
     max-width: 282px;
     height: 100%;
-    padding: 60px 0;
+    padding: 63px 0;
     margin: 0 auto;
   }
 
@@ -275,7 +308,7 @@
   }
 
   .advantages__list-title {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
 
   .advantages__content-wrapper:last-of-type {
@@ -287,7 +320,7 @@
   }
 
   .advantages__content-wrapper--blue-reverse {
-    padding: 50px 85px;
+    padding: 55px 85px;
   }
 
   .advantages__item--grey {
@@ -297,7 +330,7 @@
 
   .advantages__content-wrapper--grey {
     justify-content: flex-start;
-    padding: 40px 0;
+    padding: 45px 0;
     max-width: 300px;
     margin: 0 auto;
   }
@@ -317,12 +350,20 @@
   .advantages__number--grey {
     margin-bottom: 24px;
   }
+
+  .advantages__content-wrapper--burger {
+    padding: 65px 0;
+  }
 }
 
 @media (max-width: @mobile-width-only) {
   .advantages__text {
     position: relative;
     padding: 37px 25px;
+  }
+
+  .advantages__number--blue {
+    margin: 13px 0;
   }
 
   .advantages__title {
@@ -434,5 +475,9 @@
   .advantages__description--grey {
     max-width: 250px;
     margin: 0 auto;
+  }
+
+  .advantages__icon {
+    margin-bottom: 20px;
   }
 }

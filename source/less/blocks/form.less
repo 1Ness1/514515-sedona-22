@@ -215,10 +215,12 @@
   }
 
   .form__title--place-form {
-    max-width: 308px;
     text-align: center;
     font-size: 21px;
+    padding: 0 120px;
+    margin: 0 auto;
     margin-bottom: 60px;
+    position: relative;
   }
 
   .form__text--place-label {
@@ -230,6 +232,32 @@
     height: 56px;
     top: -17px;
     left: -78px;
+  }
+
+  .form__title--line {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .form__title--line::before,
+  .form__title--line::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    top: 50%;
+    background: @form-line;
+    width: 123px;
+  }
+
+  .form__title--line::before {
+    left: 0;
+  }
+
+  .form__title--line::after {
+    right: 0;
   }
 }
 
@@ -270,9 +298,15 @@
   .form__title--place-form {
     margin: 0 auto;
     margin-bottom: 60px;
+    padding: 0 300px;
   }
 
   .form__text--place-label {
     min-width: 125px;
+  }
+
+  .form__title--line::before,
+  .form__title--line::after {
+    width: 280px;
   }
 }

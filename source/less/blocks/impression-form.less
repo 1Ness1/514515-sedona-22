@@ -11,5 +11,16 @@
     grid-area: impression;
     padding: 20px 0;
     grid-gap: 30px;
+    position: relative;
+  }
+
+  .impression-form::after {
+    content: "";
+    position: absolute;
+    background: @form-line;
+    height: 100%;
+    width: 1px;
+    top: 0;
+    right: 0;
   }
 }

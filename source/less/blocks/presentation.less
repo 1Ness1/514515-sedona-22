@@ -30,7 +30,9 @@
 
 .presentation__button {
   background: transparent;
-  border: 0;
+  cursor: pointer;
+  outline: none;
+  border: none;
 }
 
 .presentation__line--background {
@@ -55,6 +57,15 @@
 .presentation__svg {
   fill: @presentation-button;
 }
+
+.presentation__svg:hover {
+  fill: @lightblack;
+}
+
+.presentation__svg:active {
+  fill: fade(@lightblack, 30%);
+}
+
 
 .presentation__button--replay {
   margin-right: auto;
@@ -139,6 +150,14 @@
 
   .presentation__svg {
     fill: @white;
+  }
+
+  .presentation__svg:hover {
+    fill: fade(@white, 60%);
+  }
+
+  .presentation__svg:active {
+    fill: fade(@white, 30%);
   }
 
   .presentation__line {

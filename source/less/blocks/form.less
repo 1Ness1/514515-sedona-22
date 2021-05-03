@@ -23,12 +23,17 @@
 }
 
 .form__input {
+  outline: none;
   font-weight: 700;
   color: @black;
   border: 0;
   background: @lightgrey;
   padding: 18px 0 14px 20px;
   width: 100%;
+  max-height: 58px;
+  font-size: 18px;
+  line-height: 26px;
+  bottom: 0;
 }
 
 .form__input::placeholder {
@@ -115,7 +120,20 @@
 
 .form__radio:checked + .form__text--impression-form::before {
   content: "";
-  background: @black;
+  background: @lightblack;
+}
+
+.form__text--impression-form:hover::before {
+  content: "";
+  border-color: @grey;
+}
+
+.form__text--impression-form:active::before {
+  border-color: @grey-button-active;
+}
+
+.form__radio:checked + .form__text--impression-form:active::before {
+  background: fade(@lightblack, 30%);
 }
 
 .form__title--place-form {
@@ -141,10 +159,33 @@
   left: -70px;
 }
 
+.form__text--place-label:hover::before {
+  background-color: @grey-disabled;
+}
+
 .form__checkbox:checked + .form__text--place-label::before {
   content: "";
   background: url("../img/tick.svg") no-repeat center center;
   background-color: @lightgrey;
+}
+
+.form__checkbox:checked + .form__text--place-label:hover::before {
+  background-color: @grey-disabled;
+}
+
+.form__checkbox:checked + .form__text--place-label:active::before {
+  background-color: @grey-button-active;
+  opacity: 0.3;
+}
+
+.form__input:hover {
+  background: @grey-disabled;
+}
+
+.form__input:focus-within {
+  background: @white;
+  outline: 4px solid @grey-disabled;
+  outline-offset: -4px;
 }
 
 @media (min-width: @tablet-width) {

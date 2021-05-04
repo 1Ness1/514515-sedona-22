@@ -11,7 +11,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
     <header class="page-header">
@@ -23,7 +23,7 @@
         </picture>
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle" type="button">
+        <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
@@ -49,12 +49,12 @@
       <section class="greeting-main">
         <div class="greeting-main__wrapper">
         <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
-        <svg class="greeting-main__logo" width="282" height="214">
+        <svg class="greeting-main__logo" aria-hidden="true" focusable="false" width="282" height="214">
           <use href="img/sprite.svg#icon-d-sedona"></use>
         </svg>
         </div>
         <!-- Треугольник, должен налаживаться -->
-        <svg class="greeting-main__triangle" width="320" height="57">
+        <svg class="greeting-main__triangle" aria-hidden="true" focusable="false" width="320" height="57">
           <use href="img/sprite.svg#icon-triangle"></use>
         </svg>
       </section>
@@ -63,7 +63,7 @@
           <div class="advantages__text">
             <h2 class="advantages__about">Седона &mdash; небольшой городок в аризоне, заслуживающий большего!</h2>
             <p class="advantages__list-title">Рассмотрим 5 причин, по которым седона круче,чем гранд каньон!</p>
-            <svg class="advantages__triangle" width="320" height="57" viewBox="0 0 320 57" xmlns="http://www.w3.org/2000/svg">
+            <svg class="advantages__triangle" aria-hidden="true" focusable="false" width="320" height="57" viewBox="0 0 320 57" xmlns="http://www.w3.org/2000/svg">
               <use href="img/sprite.svg#icon-triangle"></use>
             </svg>
           </div>
@@ -75,29 +75,32 @@
               <p class="advantages__description advantages__description--blue">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-city-desctop.jpg 1x, img/photo-city-desctop@2x.jpg 2x">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-city-desktop.webp 1x, img/photo-city-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-city-tablet.webp 1x, img/photo-city-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-city-mobile.webp 1x, img/photo-city-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
-              <img class="advantages__image" src="img/photo-city-mobyle.jpg" srcset="img/photo-city-mobile@2x.jpg 2x" width="520" height="260" alt="Фото города">
+              <img class="advantages__image" src="img/photo-city-mobile.jpg" srcset="img/photo-city-mobile@2x.jpg 2x" width="520" height="260" alt="Фото города">
             </picture>
           </li>
 
           <li class="advantages__item advantages__item--white">
             <div class="advantages__content-wrapper advantages__content-wrapper--white">
-              <svg class="advantages__icon advantages__icon--white" width="75" height="72">
+              <svg class="advantages__icon advantages__icon--white" aria-hidden="true" focusable="false" width="75" height="72">
                 <use href="img/sprite.svg#icon-housing"></use>
               </svg>
             <h3 class="advantages__title advantages__title--white">Жилье</h3>
             <p class="advantages__description advantages__description--housing">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
           <div class="advantages__content-wrapper advantages__content-wrapper--white advantages__content-wrapper--burger">
-            <svg class="advantages__icon advantages__icon--white advantages__icon--burger" width="76" height="67">
+            <svg class="advantages__icon advantages__icon--white advantages__icon--burger" aria-hidden="true" focusable="false" width="76" height="67">
               <use href="img/sprite.svg#icon-burger"></use>
             </svg>
             <h3 class="advantages__title advantages__title--burger">Еда</h3>
             <p class="advantages__description advantages__description--burger">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </div>
           <div class="advantages__content-wrapper advantages__content-wrapper--white">
-            <svg class="advantages__icon advantages__icon--white" width="64" height="75">
+            <svg class="advantages__icon advantages__icon--white" aria-hidden="true" focusable="false" width="64" height="75">
               <use href="img/sprite.svg#icon-gift"></use>
             </svg>
             <h3 class="advantages__title advantages__title--white">Сувениры</h3>
@@ -106,9 +109,12 @@
           </li>
           <li class="advantages__item advantages__item--blue advantages__item--blue-reverse">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desctop.jpg 1x, img/photo-bridge-desctop@2x.jpg 2x">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-bridge-moiyle.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
-              <img class="advantages__image" src="img/photo-bridge-mobyle.jpg" srcset="img/photo-bridge-mobyle@2x.jpg 2x" width="520" height="260" alt="Фото города">
+              <img class="advantages__image" src="img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="520" height="260" alt="Фото города">
             </picture>
             <div class="advantages__content-wrapper advantages__content-wrapper--blue advantages__content-wrapper--blue-reverse">
               <h3 class="advantages__title advantages__title--blue">Там есть мост дьявола</h3>
@@ -146,9 +152,12 @@
       <section class="map-search">
         <div class="map-search__wrapper">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg">
-            <source media="(min-width: 768px)" srcset="img/map-tablet.jpg">
-            <img class="map-search__img" src="img/map-mobile.jpg" alt="logotype">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-tablet@2x.mobile 2x">
+            <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <img class="map-search__img" src="img/map-mobile.jpg" srcset="img/map-mobile.jpg 2x" alt="logotype">
           </picture>
         </div>
       </section>
@@ -158,25 +167,22 @@
         <p class="footer__hashtag">#visitsedona</p>
         <ul class="footer__list site-list">
           <li class="footer__item social-icon footer__item--twitter">
-            <!-- тут должен быть twitter -->
             <a class="social-icon__link" href="#">
-              <svg class="social-icon__svg" width="18" height="15">
+              <svg class="social-icon__svg" aria-hidden="true" focusable="false" width="18" height="15">
                 <use href="img/sprite.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
           <li class="footer__item social-icon footer__item--facebook">
-            <!-- тут должен быть facebook -->
             <a class="social-icon__link" href="#">
-              <svg class="social-icon__svg" width="9" height="19">
+              <svg class="social-icon__svg" aria-hidden="true" focusable="false" width="9" height="19">
                 <use href="img/sprite.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="footer__item social-icon footer__item--youtube">
-            <!-- тут должен быть youtube -->
             <a class="social-icon__link" href="#">
-              <svg class="social-icon__svg" width="20" height="14">
+              <svg class="social-icon__svg" aria-hidden="true" focusable="false" width="20" height="14">
                 <use href="img/sprite.svg#icon-youtube"></use>
               </svg>
             </a>
@@ -184,12 +190,12 @@
         </ul>
         <a class="footer__academy" href="https://htmlacademy.ru/intensive/adaptive">
           Разработано
-          <svg class="academy-logo" width="27" height="35">
+          <svg class="academy-logo" aria-hidden="true" focusable="false" width="27" height="35">
             <use href="img/sprite.svg#icon-academy"></use>
           </svg>
         </a>
     </div>
     </footer>
-    <script src="js/main-nav.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

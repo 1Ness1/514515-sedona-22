@@ -12,6 +12,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" as="font" href="fonts/ptsans.woff2" crossorigin>
+    <link rel="preload" as="font" href="fonts/ptsansbold.woff2" crossorigin>
   </head>
   <body class="page-body">
     <header class="page-header">
@@ -43,6 +45,7 @@
           </ul>
         </div>
       </nav>
+    </header>
   <main>
     <h1 class="visually-hidden">Фото и видео Седоны</h1>
     <section class="greeting">
@@ -62,7 +65,7 @@
           <p class="catalog-info__description">Не можешь решиться на путешествие из-за курса?
             Фотографии помогут вам забыть о политике и экономике
           </p>
-          <div class="catalog-info__underline page-main__line"></div>
+          <div class="catalog-info__underline"></div>
       </div>
     </section>
     <section class="catalog">
@@ -72,7 +75,7 @@
           <picture>
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/photo-1-mobile.webp 1x", srcset="img/photo-1-mo@2x.web 2x">
+            <source type="image/webp" srcset="img/photo-1-mobile.webp 1x, img/photo-1-mobile@2x.web 2x">
             <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
             <img class="card__image card__image--big" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Изображение просторов">
@@ -87,13 +90,13 @@
           </svg>
           <p class="card__like-count">1350</p>
         </a>
-      <div class="card__underline page-main__line"></div>
+      <div class="card__underline"></div>
       </div>
       </div>
       <div class="catalog__card card card--plant">
         <a class="catalog__link" href="#">
           <picture>
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-2-desktop.webp 1x img/photo-2-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/photo-2-mobile.webp 1x, img/photo-2-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
@@ -110,7 +113,7 @@
           </svg>
           <p class="card__like-count">143</p>
         </a>
-        <div class="card__underline page-main__line"></div>
+        <div class="card__underline"></div>
         </div>
       </div>
       <div class="catalog__card card card--north">
@@ -133,7 +136,7 @@
           </svg>
           <p class="card__like-count">96</p>
         </a>
-        <div class="card__underline page-main__line"></div>
+        <div class="card__underline"></div>
       </div>
       </div>
       <div class="catalog__card card card--bridge">
@@ -154,7 +157,7 @@
           </svg>
           <p class="card__like-count">254</p>
         </a>
-        <div class="card__underline page-main__line"></div>
+        <div class="card__underline"></div>
         </div>
       </div>
     </div>
@@ -180,7 +183,7 @@
             <use href="img/sprite.svg#icon-replay"></use>
           </svg>
         </button>
-        <div class="presentation__line--background">
+        <div class="presentation__line-background">
           <div class="presentation__line"></div>
         </div>
         <button class="presentation__button presentation__button--subtitles" type="button" aria-label="Субтитры">

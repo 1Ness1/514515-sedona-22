@@ -4,6 +4,10 @@
   margin: 0 auto;
 }
 
+.feedback__text {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .feedback__wrapper {
     max-width: 648px;
@@ -15,6 +19,11 @@
     align-items: baseline;
     grid-column-gap: 17px;
     grid-row-gap: 30px;
+  }
+
+  .feedback__text {
+    margin-left: auto;
+    display: block;
   }
 }
 

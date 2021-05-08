@@ -8,10 +8,16 @@
 .card__image {
   display: block;
   margin-bottom: 7px;
+  height: 280px;
+  object-fit: cover;
+  background-color: @lightgrey;
 }
 
 .card__underline {
   margin-bottom: 24px;
+  height: 1px;
+  background: @lightgrey;
+  width: 100%;
 }
 
 .card__link {
@@ -126,6 +132,10 @@
     margin: 0;
     grid-area: like;
     justify-self: flex-end;
+  }
+
+  .card__underline {
+    display: none;
   }
 }
 

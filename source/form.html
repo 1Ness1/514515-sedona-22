@@ -12,6 +12,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" as="font" href="fonts/ptsans.woff2" crossorigin>
+    <link rel="preload" as="font" href="fonts/ptsansbold.woff2" crossorigin>
   </head>
   <body class="page-body">
     <header class="page-header">
@@ -71,8 +73,8 @@
         <div class="page-main__line"></div>
     </div>
     </section>
-
     <section class="feedback">
+      <h3 class="visually-hidden">Форма отзыва</h3>
       <div class="feedback__wrapper">
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
       <div class="form introduce-form">
@@ -154,12 +156,12 @@
       </div>
       <div class="form describe-form">
         <label class="form__describe-label">
-          <p class="form__title form__title--describe-form form__title--line">Опишите свои эмоции:</p>
+          <span class="form__title form__title--describe-form form__title--line">Опишите свои эмоции:</span>
           <textarea class="form__textarea" name="textarea" id="textarea" cols="20" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
         </label>
       </div>
       <button class="feedback__button button" type="submit" aria-label="Открыть меню">Отправить отзыв</button>
-      <p class="describe__text">&ast; &mdash; Обязательные поля</p>
+      <p class="feedback__text">&ast; &mdash; Обязательные поля</p>
     </form>
   </div>
     </section>

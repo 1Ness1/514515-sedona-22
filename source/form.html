@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html  lang="ru" class="page">
   <head>
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
     <header class="page-header">
@@ -12,11 +19,11 @@
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
-          <img src="img/logotype-mobile.svg" alt="logotype">
+          <img src="img/logotype-mobile.svg" alt="Логотип Седона">
         </picture>
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle" type="button">
+        <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
@@ -44,11 +51,11 @@
     <section class="greeting">
       <div class="greeting__wrapper">
       <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
-      <svg class="greeting__text" width="229" height="39">
+      <svg class="greeting__text" aria-hidden="true" focusable="false" width="229" height="39">
         <use href="img/sprite.svg#icon-m-sedona"></use>
       </svg>
     </div>
-    <svg class="greeting__triangle" width="320" height="57">
+    <svg class="greeting__triangle" aria-hidden="true" focusable="false" width="320" height="57">
       <use href="img/sprite.svg#icon-triangle"></use>
     </svg>
     </section>
@@ -67,13 +74,12 @@
 
     <section class="feedback">
       <div class="feedback__wrapper">
-      <form class="feedback-form" action="https://echo.htmlacademy.ru">
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
       <div class="form introduce-form">
         <p class="form__title form__title--introduce">Представьтесь:</p>
           <label class="form__text form__text--introduce">
             Имя*:
             <input class="form__input form__input--introduce" type="text" placeholder="Петр">
-
           </label>
           <label class="form__text form__text--introduce">
             Фамилия*:
@@ -91,14 +97,14 @@
           <div class="contacts-form__wrapper">
           <label class="form__text form__text--column form__text--contacts-form"><span class="contacts-form__span-desktop">Телефон*</span><span class="contacts-form__span contacts-form__span--hidden">Контактный телефон*:</span>
             <input class="form__input form__input--contacts-form" type="tel" placeholder="Введите телефон">
-            <svg class="contacts-form__svg" width="18" height="18">
+            <svg class="contacts-form__svg" aria-hidden="true" focusable="false" width="18" height="18">
               <use href="img/sprite.svg#icon-tel"></use>
             </svg>
           </label>
           <label class="form__text form__text--column form__text--contacts-form">
             <span class="contacts-form__span">Электронная почта*:</span>
             <input class="form__input form__input--contacts-form" type="email" placeholder="Введите e-mail">
-            <svg class="contacts-form__svg" width="16" height="12">
+            <svg class="contacts-form__svg" aria-hidden="true" focusable="false" width="16" height="12">
               <use href="img/sprite.svg#icon-email"></use>
             </svg>
           </label>
@@ -149,10 +155,10 @@
       <div class="form describe-form">
         <label class="form__describe-label">
           <p class="form__title form__title--describe-form form__title--line">Опишите свои эмоции:</p>
-          <textarea class="form__textarea" name="" id="" cols="20" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea class="form__textarea" name="textarea" id="textarea" cols="20" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
         </label>
       </div>
-      <button class="feedback__button button" type="submit">Отправить отзыв</button>
+      <button class="feedback__button button" type="submit" aria-label="Открыть меню">Отправить отзыв</button>
       <p class="describe__text">&ast; &mdash; Обязательные поля</p>
     </form>
   </div>
@@ -163,25 +169,22 @@
       <p class="footer__hashtag">#visitsedona</p>
       <ul class="footer__list site-list">
         <li class="footer__item social-icon footer__item--twitter">
-          <!-- тут должен быть twitter -->
           <a class="social-icon__link" href="#">
-            <svg class="social-icon__svg" width="18" height="15">
+            <svg class="social-icon__svg" aria-hidden="true" focusable="false" width="18" height="15">
               <use href="img/sprite.svg#icon-twitter"></use>
             </svg>
           </a>
         </li>
         <li class="footer__item social-icon footer__item--facebook">
-          <!-- тут должен быть facebook -->
           <a class="social-icon__link" href="#">
-            <svg class="social-icon__svg" width="9" height="19">
+            <svg class="social-icon__svg" aria-hidden="true" focusable="false" width="9" height="19">
               <use href="img/sprite.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
         <li class="footer__item social-icon footer__item--youtube">
-          <!-- тут должен быть youtube -->
           <a class="social-icon__link" href="#">
-            <svg class="social-icon__svg" width="20" height="14">
+            <svg class="social-icon__svg" aria-hidden="true" focusable="false" width="20" height="14">
               <use href="img/sprite.svg#icon-youtube"></use>
             </svg>
           </a>
@@ -189,12 +192,12 @@
       </ul>
       <a class="footer__academy" href="https://htmlacademy.ru/intensive/adaptive">
         Разработано
-        <svg class="academy-logo" width="27" height="35">
+        <svg class="academy-logo" aria-hidden="true" focusable="false" width="27" height="35">
           <use href="img/sprite.svg#icon-academy"></use>
         </svg>
       </a>
   </div>
   </footer>
-  <script src="js/main-nav.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 </html>

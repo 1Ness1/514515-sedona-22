@@ -1,6 +1,10 @@
 //greeting block
 .greeting {
   background: url("../img/back-mobile.jpg") no-repeat 50% 100%;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/back-mobile@2x.jpg") no-repeat 50% 100%;
+  }
   text-align: center;
   width: 100%;
   margin: 0 auto;
@@ -40,17 +44,25 @@
   .greeting {
     background: url("../img/back-tablet.jpg") center bottom no-repeat;
     max-width: @tablet-width;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/back-tablet@2x.jpg") center bottom no-repeat;
+    }
   }
 }
 
-@media (min-width: @desctop-width) {
+@media (min-width: @desktop-width) {
   .greeting {
     background: url("../img/back-desktop.jpg") center bottom no-repeat;
-    max-width: @desctop-width;
+    max-width: @desktop-width;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/back-desktop@2x.jpg") center bottom no-repeat;
+    }
   }
 
   .greeting__wrapper {
-    max-width: @desctop-width;
+    max-width: @desktop-width;
     width: 100%;
     padding: 100px 0 115px 0;
   }

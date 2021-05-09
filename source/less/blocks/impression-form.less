@@ -12,6 +12,7 @@
     padding: 20px 0;
     grid-gap: 30px;
     position: relative;
+    padding-right: 70px;
   }
 
   .impression-form::after {
@@ -22,5 +23,17 @@
     width: 1px;
     top: 0;
     right: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .impression-form {
+      max-width: 400px;
+  }
+
+  .impression-form::after {
+    top: 30px;
+    right: -80px;
+    height: 292px;
   }
 }

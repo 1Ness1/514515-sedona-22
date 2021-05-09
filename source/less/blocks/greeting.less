@@ -5,6 +5,8 @@
 
   @media (min-resolution: 2dppx) {
     background: url("../img/back-mobile@2x.jpg") no-repeat 50% 100%;
+    background-size: cover;
+    background-color: @lightblue;
   }
   text-align: center;
   width: 100%;
@@ -45,9 +47,12 @@
   .greeting {
     background: url("../img/back-tablet.jpg") center bottom no-repeat;
     max-width: @tablet-width;
+    background-color: @lightblue;
 
     @media (min-resolution: 2dppx) {
       background: url("../img/back-tablet@2x.jpg") center bottom no-repeat;
+      background-size: cover;
+      background-color: @lightblue;
     }
   }
 }
@@ -56,9 +61,12 @@
   .greeting {
     background: url("../img/back-desktop.jpg") center bottom no-repeat;
     max-width: @desktop-width;
+    background-color: @lightblue;
 
     @media (min-resolution: 2dppx) {
       background: url("../img/back-desktop@2x.jpg") center bottom no-repeat;
+      background-size: cover;
+      background-color: @lightblue;
     }
   }
 

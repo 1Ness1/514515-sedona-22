@@ -37,7 +37,7 @@
 }
 
 .form__input::placeholder {
-  font-family: "PT sans", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: @black;
   font-weight: 700;
   font-size: 18px;
@@ -54,6 +54,7 @@
   line-height: 26px;
   font-weight: 700;
   border: 0;
+  resize: none;
 }
 
 .form__textarea::placeholder {
@@ -83,7 +84,7 @@
 }
 
 .form__title--introduce {
-  margin-bottom: 23px;
+  margin-bottom: 15px;
 }
 
 .form__text--introduce {
@@ -92,7 +93,7 @@
   grid-gap: 18px;
   grid-auto-flow: row;
   align-items: center;
-  margin-bottom: 31px;
+  margin-bottom: 20px;
 }
 
 
@@ -188,6 +189,11 @@
   outline-offset: -4px;
 }
 
+.form__title--describe-form {
+  display: block;
+  margin-bottom: 15px;
+}
+
 @media (min-width: @tablet-width) {
   .form__textarea {
     width: 100%;
@@ -226,7 +232,7 @@
   }
 
   .form__title--introduce {
-    margin-bottom: 55px;
+    margin-bottom: 60px;
     font-size: 21px;
   }
 

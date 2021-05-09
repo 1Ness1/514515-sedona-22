@@ -16,15 +16,8 @@
     <link rel="preload" as="font" href="fonts/ptsansbold.woff2" crossorigin>
   </head>
   <body class="page-body">
-    <header class="page-header">
+    <header class="page-header page-header--nojs">
       <div class="page-header__wrapper">
-        <a class="page-header__logo" href="index.html">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
-            <img src="img/logotype-mobile.svg" alt="Логотип Седона">
-          </picture>
-        </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
             <span class="visually-hidden">Открыть меню</span>
@@ -46,7 +39,13 @@
             </ul>
           </div>
         </nav>
-
+        <a class="page-header__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+            <img class="page-header__img" src="img/logotype-mobile.svg" alt="Логотип Седона">
+          </picture>
+        </a>
     </div>
     </header>
     <main class="page-main">

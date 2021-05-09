@@ -48,13 +48,18 @@
   font-family: inherit;
   background: @lightgrey;
   min-width: 280px;
-  min-height: 160px;
+  height: 160px;
   padding: 13px 20px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   border: 0;
   resize: none;
+}
+
+.form__textarea:focus {
+  outline: 4px solid @grey-disabled;
+  outline-offset: -4px;
 }
 
 .form__textarea::placeholder {
@@ -80,7 +85,7 @@
 }
 
 .form__input--contacts-form {
-  padding: 22px;
+  padding: 20px;
 }
 
 .form__title--introduce {
@@ -189,6 +194,11 @@
   outline-offset: -4px;
 }
 
+.form__radio:focus-visible + .form__text,
+.form__checkbox:focus-visible + .form__text {
+  outline: 4px solid @grey-disabled;
+}
+
 .form__title--describe-form {
   display: block;
   margin-bottom: 15px;
@@ -217,18 +227,19 @@
 
   .form__input--contacts-form {
     margin-left: 0;
+    padding: 15px 20px;
   }
 
   .form__text--contacts-form {
     position: relative;
-    margin-bottom: 18px;
+    margin-bottom: 25px;
     grid-gap: 5px;
   }
 
   .form__title--contacts-form {
     text-align: center;
     font-size: 21px;
-    margin-bottom: 18px;
+    margin-bottom: 21px;
   }
 
   .form__title--introduce {
@@ -237,7 +248,7 @@
   }
 
   .form__input--introduce {
-    padding: 23px 0 21px 22px;
+    padding: 15px 0 21px 22px;
   }
 
   .form__text--introduce {

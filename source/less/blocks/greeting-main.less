@@ -2,7 +2,8 @@
 
 .greeting-main {
   background: url("../img/back-mobile.jpg") no-repeat 50% 0;
-  padding: 80px 0;
+  background-color: @lightblue;
+  padding: 90px 0 78px;
   position: relative;
   width: 100%;
   margin: 0 auto;
@@ -10,6 +11,7 @@
   @media (min-resolution: 2dppx) {
     background: url("../img/back-mobile@2x.jpg") no-repeat 50% 40%;
     background-size: cover;
+    background-color: @lightblue;
   }
 }
 
@@ -39,10 +41,12 @@
     background-size: cover;
     max-width: @tablet-width;
     padding: 74px 0 85px 0;
+    background-color: @lightblue;
 
     @media (min-resolution: 2dppx) {
       background: url("../img/back-tablet@2x.jpg") 50% 0 no-repeat;
       background-size: cover;
+      background-color: @lightblue;
     }
   }
 
@@ -60,11 +64,13 @@
   .greeting-main {
     background: url("../img/back-desktop.jpg") 50% 0 no-repeat;
     max-width: @desktop-width;
+    background-color: @lightblue;
     padding: 74px 0 85px 0;
 
     @media (min-resolution: 2dppx) {
       background: url("../img/back-desktop@2x.jpg") 50% 0 no-repeat;
       background-size: cover;
+      background-color: @lightblue;
     }
   }
 

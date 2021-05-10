@@ -35,7 +35,11 @@
   border: none;
 }
 
-.presentation__line--background {
+.presentation__button:focus {
+  outline: 1px solid fade(@black, 50%);
+}
+
+.presentation__line-background {
   background: fade(@black, 60%);
   width: 100%;
   height: 45px;
@@ -96,10 +100,12 @@
   background: @white;
   border-radius: 50%;
   z-index: 20;
+  cursor: pointer;
 }
 
 .presentation__image {
   display: block;
+  background-color: @lightgrey;
 }
 
 .presentation__video {
@@ -164,7 +170,7 @@
     max-width: 400px;
   }
 
-  .presentation__line--background {
+  .presentation__line-background {
     position: static;
     background: none;
   }

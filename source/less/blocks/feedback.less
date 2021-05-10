@@ -4,6 +4,10 @@
   margin: 0 auto;
 }
 
+.feedback__text {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .feedback__wrapper {
     max-width: 648px;
@@ -11,15 +15,35 @@
 
   .feedback-form {
     display: grid;
-    grid-template-areas: "impression introduce""contacts contacts""place place""describe describe";
+    grid-template-areas: "impression introduce""contacts contacts""place place""describe describe""button p";
     align-items: baseline;
-    grid-column-gap: 17px;
-    grid-row-gap: 30px;
+  }
+
+  .feedback__text {
+    margin-left: auto;
+    display: block;
+    grid-area: p;
+    padding-top: 10px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .feedback__wrapper {
     max-width: 960px;
+  }
+
+  .feedback-form {
+    grid-template-columns: 400px 400px;
+    grid-column-gap: 160px;
+  }
+
+  .feedback__button {
+    margin: 30px 0 74px;
+    padding-right: 0;
+    min-width: 480px;
+  }
+
+  .feedback__text {
+    padding-top: 40px;
   }
 }

@@ -9,7 +9,7 @@
 @media (min-width: @tablet-width) {
   .impression-form {
     grid-area: impression;
-    padding: 20px 0;
+    padding: 20px 50px 15px 0;
     grid-gap: 30px;
     position: relative;
   }
@@ -22,5 +22,17 @@
     width: 1px;
     top: 0;
     right: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .impression-form {
+    max-width: 400px;
+  }
+
+  .impression-form::after {
+    top: 30px;
+    right: -80px;
+    height: 292px;
   }
 }

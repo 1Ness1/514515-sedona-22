@@ -16,15 +16,8 @@
     <link rel="preload" as="font" href="fonts/ptsansbold.woff2" crossorigin>
   </head>
   <body class="page-body">
-    <header class="page-header">
+    <header class="page-header page-header--nojs">
       <div class="page-header__wrapper">
-        <a class="page-header__logo" href="index.html">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
-            <img src="img/logotype-mobile.svg" alt="Логотип Седона">
-          </picture>
-        </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
             <span class="visually-hidden">Открыть меню</span>
@@ -32,10 +25,10 @@
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="main-nav__item">
-                <a class="main-nav__link" href="index.html">Главная</a>
+                <a class="main-nav__link main-nav__link--current" href="index.html">Главная</a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link main-nav__link--current" href="catalog.html">Фото и видео</a>
+                <a class="main-nav__link" href="catalog.html">Фото и видео</a>
               </li>
               <li class="main-nav__item">
                 <a class="main-nav__link" href="form.html">Форма отзыва</a>
@@ -46,7 +39,14 @@
             </ul>
           </div>
         </nav>
-      </div>
+        <a class="page-header__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+            <img class="page-header__img" src="img/logotype-mobile.svg" alt="Логотип Седона">
+          </picture>
+        </a>
+    </div>
     </header>
   <main>
     <h1 class="visually-hidden">Фото и видео Седоны</h1>

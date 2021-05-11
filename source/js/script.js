@@ -15,3 +15,41 @@ navToggle.addEventListener('click', function() {
     navMain.classList.remove('main-nav--opened');
   }
 });
+
+
+//modal
+const modal = document.querySelector('.modal');
+const modalSuccess = document.querySelector('.modal--success');
+const modalFalture = document.querySelector('.modal--falture');
+const modalClose = document.querySelectorAll('.modal__button');
+const modalOpen = document.querySelector('.feedback__button');
+const form = document.querySelector('.feedback-form');
+const fields = form.querySelector('.form__field')
+
+form.addEventListener('submit', function(evt) {
+  evt.preventDefault();
+  if (fields.value.length <= 0) {
+    modalFalture.classList.add('modal--show');
+  } else {
+    modalSuccess.classList.add('modal--show');
+  }
+})
+
+modalClose.forEach((modalClose) => {
+  modalClose.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    modalFalture.classList.remove('modal--show');
+    modalSuccess.classList.remove('modal--show');
+  })
+})
+
+
+// modalOpen.addEventListener('click', function(evt) {
+//   evt.preventDefault();
+
+//   modalSuccess.classList.add('modal--show');
+// });
+
+
+
+

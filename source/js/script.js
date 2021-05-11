@@ -41,15 +41,4 @@ modalClose.forEach((modalClose) => {
     modalFalture.classList.remove('modal--show');
     modalSuccess.classList.remove('modal--show');
   })
-})
-
-
-// modalOpen.addEventListener('click', function(evt) {
-//   evt.preventDefault();
-
-//   modalSuccess.classList.add('modal--show');
-// });
-
-
-
-
+});

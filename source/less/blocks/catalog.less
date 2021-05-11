@@ -15,11 +15,15 @@
 
 @media (min-width: @tablet-width) {
   .catalog__wrapper {
-    max-width: 690px;
+    max-width: 688px;
     display: grid;
     grid-auto-flow: row;
     grid-template-areas: "road road""plant north""bridge ...";
     grid-template-columns: 1fr 1fr;
+  }
+
+  .catalog__card:nth-of-type(2n+1) {
+    background: @card-grey;
   }
 }
 

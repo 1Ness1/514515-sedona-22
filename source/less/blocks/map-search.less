@@ -1,4 +1,7 @@
 //map-search block
+.map-search {
+  position: relative;
+}
 
 .map-search__wrapper {
   position: relative;
@@ -14,6 +17,13 @@
   }
 }
 
+.map-search__google {
+  height: 350px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
 .map-search__wrapper::before {
   content: "";
   position: absolute;
@@ -24,13 +34,6 @@
   background: @lightblue;
   border: 5px solid @white;
   border-radius: 50%;
-}
-
-.map-search__google {
-  height: 350px;
-  width: 100vw;
-  margin-left: calc((100vw - 100%) / -2);
-  overflow-x: hidden;
 }
 
 @media (min-width: @tablet-width) {
